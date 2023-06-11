@@ -24,6 +24,11 @@ local plugins = {
     config = function (_, opts)
       require('rust-tools').setup(opts)
     end
+  },
+  {
+    "ThePrimeagen/harpoon",
+    lazy = false,
+    cmd = "Harpoon",
   }
 }
 
