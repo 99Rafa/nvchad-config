@@ -104,10 +104,10 @@ M.tabufline = {
 
 M.telescope = {
   n = {
-    ["<leader>fk"] = { "<cmd>Telescope keymaps<CR>", " Find keymaps" },
-    ["<leader>fs"] = { "<cmd>Telescope lsp_document_symbols<CR>", " Find document symbols" },
-    ["<leader>fr"] = { "<cmd>Telescope frecency<CR>", " Recent files" },
-    ["<leader>fu"] = { "<cmd>Telescope undo<CR>", " Undo tree" },
+    ["<leader>fk"] = { "<cmd>Telescope keymaps<CR>", "Find keymaps" },
+    ["<leader>fs"] = { "<cmd>Telescope lsp_document_symbols<CR>", "Find document symbols" },
+    ["<leader>fr"] = { "<cmd>Telescope frecency<CR>", "Recent files" },
+    ["<leader>fu"] = { "<cmd>Telescope undo<CR>", "Undo tree" },
     ["<leader>fz"] = {
       "<cmd>Telescope current_buffer_fuzzy_find fuzzy=false case_mode=ignore_case<CR>",
       " Find current file",
