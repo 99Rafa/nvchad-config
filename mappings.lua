@@ -115,4 +115,92 @@ M.telescope = {
   },
 }
 
+M.hop = {
+  n = {
+    ["<leader><leader>s"] = {
+      function ()
+        require('hop').hint_char1()
+      end
+    },
+    ["f"] = {
+      function ()
+        require('hop').hint_char1({
+          direction = require('hop.hint').HintDirection.AFTER_CURSOR,
+          current_line_only = true
+        })
+      end,
+      "Find after cursor"
+    },
+    ["F"] = {
+      function ()
+        require('hop').hint_char1({
+          direction = require('hop.hint').HintDirection.BEFORE_CURSOR,
+          current_line_only = true
+        })
+      end,
+      "Find after cursor"
+    },
+    ["t"] = {
+      function ()
+        require('hop').hint_char1({
+          direction = require('hop.hint').HintDirection.AFTER_CURSOR,
+          current_line_only = true,
+          hint_offset = -1
+        })
+      end,
+      "Find after cursor"
+    },
+    ["T"] = {
+      function ()
+        require('hop').hint_char1({
+          direction = require('hop.hint').HintDirection.BEFORE_CURSOR,
+          current_line_only = true,
+          hint_offset = 1
+        })
+      end,
+      "Find after cursor"
+    },
+  },
+  v = {
+    ["f"] = {
+      function ()
+        require('hop').hint_char1({
+          direction = require('hop.hint').HintDirection.AFTER_CURSOR,
+          current_line_only = true
+        })
+      end,
+      "Find after cursor"
+    },
+    ["F"] = {
+      function ()
+        require('hop').hint_char1({
+          direction = require('hop.hint').HintDirection.BEFORE_CURSOR,
+          current_line_only = true
+        })
+      end,
+      "Find after cursor"
+    },
+    ["t"] = {
+      function ()
+        require('hop').hint_char1({
+          direction = require('hop.hint').HintDirection.AFTER_CURSOR,
+          current_line_only = true,
+          hint_offset = -1
+        })
+      end,
+      "Find after cursor"
+    },
+    ["T"] = {
+      function ()
+        require('hop').hint_char1({
+          direction = require('hop.hint').HintDirection.BEFORE_CURSOR,
+          current_line_only = true,
+          hint_offset = 1
+        })
+      end,
+      "Find after cursor"
+    },
+  }
+}
+
 return M

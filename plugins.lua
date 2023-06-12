@@ -29,7 +29,17 @@ local plugins = {
     "ThePrimeagen/harpoon",
     lazy = false,
     cmd = "Harpoon",
-  }
+  },
+  {
+    "phaazon/hop.nvim",
+    cmd = { "HopWord", "HopLine", "HopLineStart", "HopWordCurrentLine" },
+    branch = "v2",
+    config = function()
+      require("hop").setup {
+        keys = "jkl;hfdsaguiopyrewqtm,.nvcxzb"
+      }
+    end,
+  },
 }
 
 return plugins
