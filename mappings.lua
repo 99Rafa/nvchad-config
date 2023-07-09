@@ -13,6 +13,9 @@ M.disabled = {
 
     -- nvimtree
     ["<leader>e"] = "",
+
+    -- lspconfig
+    ["<leader>f"] = "",
   }
 }
 
@@ -113,6 +116,23 @@ M.telescope = {
       " Find current file",
     },
   },
+}
+
+M.lspconfig = {
+  n = {
+    ["<leader>e"] = {
+      function ()
+        vim.lsp.diagnostic.show_line_diagnostics()
+      end,
+      "Show line diagnostics",
+    },
+    ["<leader>ld"] = {
+      function()
+        vim.diagnostic.open_float { border = "rounded" }
+      end,
+      "Floating diagnostic",
+    }
+  }
 }
 
 M.hop = {
